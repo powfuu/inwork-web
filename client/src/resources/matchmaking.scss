@@ -1,0 +1,317 @@
+#posting-you-div{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    top:45%; left:50%;
+    text-align: center;
+}
+#posting-bar{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    left:50%;
+    margin-top: -.25em;
+    width: 20em;
+    color:black;
+}
+#posting-text{
+    font-weight: lighter;
+    font-size: .9em;
+    color: rgb(135,135,135);
+}
+#match-div{
+    text-align: center;
+    display: none;
+    margin-top: 1.4em;
+}
+.pyd2{
+    display:none;
+}
+.pt2{
+     background: linear-gradient(to right, #30CFD0 0%, #24252A 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#list-body{
+    background:white;
+    box-shadow: 0px 1px 11px -5px rgba(215, 215, 215, 100%);
+    padding:1em;
+    width: 600px;
+    height: auto;
+    min-height: 120px;
+    max-height: 150px;
+    margin: 1em auto;
+    border-radius: 8px;
+}
+.tag-list,#banner-list,#pic-list,#name-list,#profession-list,#location-list{
+    display: inline-block;
+}
+#banner-list,#pic-list{
+    object-position: center;
+    object-fit: cover;
+}
+#banner-list{
+    float:left;
+    height: 120px;
+    width: 250px;
+    border-radius: 6px;
+    margin-right: 1em;
+}
+#pic-list{
+    height: 68px;
+    width: 68px;
+    border-radius: 100%;
+    margin-left: -3.35em;
+    float:left;
+    margin-top: 1.6em;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0px 1px 11px -5px rgba(0,0,0, 100%);
+}
+#name-list{
+    width: 105px;
+    margin-top: 1.5em;
+    text-align: left;
+    margin-left: .8em;
+    color:black;
+}
+#location-list{
+    width: 200px;
+    float: right;
+    font-size: .9em;
+    color:black;
+    margin-top: -1.2em;
+    margin-right: -.7em;
+}
+#profession-list{
+    font-size: .8em;
+    color:rgb(120,120,120);
+   height: 70px;
+   width: 150px;
+   text-align: left;
+   margin-left: -1em;
+   white-space: pre; 
+   margin-top: .3em;
+}
+#request-match-b-list{
+    background:#25252A;
+    color:white;
+    border-radius: 6px !important;
+    padding: .55em .9em .6em .9em;
+    float:right;
+    margin-right: .5em;
+    margin-top: 2.85em;
+}
+.tag-list.inactive{
+    display: none !important;
+}
+.tag-list{
+    display: inline-block;
+    margin-top: -4em;
+    float:left;
+    text-align: left;
+    margin-left: 25em;
+    font-size: .75em;
+    width: 70px;
+}
+#search-list{
+    transform: scale(.7);
+    margin-top: .1em;
+    margin-bottom: .4em;
+}
+#search-list-inactive{
+    display:none;
+}
+@media screen and (max-width:667px){
+    #list-body{
+        width: 500px !important;
+    }
+    #banner-list{
+        margin-right: -10em !important;
+        width: 150px !important;
+    }
+    #pic-list{
+        margin-left: 6.7em !important;
+        margin-right: -1em;
+    }
+    .tag-list{
+        margin-left: 16em !important;
+    }
+}
+@media screen and (max-width:564px){
+    #list-body{
+        width: 400px !important;
+    }
+    .tag-list{
+        margin-left: 11em !important;
+    }
+    #banner-list{
+        margin-right: -10em !important;
+        width: 100px !important;
+    }
+    #pic-list{
+        margin-left: 3.7em !important;
+        height: 62px; width: 62px;
+    }
+    #name-list{
+        position: absolute;
+    margin-top: 1.75em;
+    margin-left: -1.75em;
+    }
+    #search-list{
+        margin-left: .5em;
+        margin-top: 2.1em;
+    }
+    #profession-list{
+        margin-left: 1em;
+    }
+    .profclass.inactive{
+        margin-left: 2em !important;
+        margin-top: 2em !important;
+    }
+    #request-match-b-list{
+        font-size: .7em;
+        margin-top: 5em !important;
+        float: right !important;
+    }
+}
+@media screen and (max-width:451px){
+    .profclass.inactive{
+        margin-left: 0em !important;
+        margin-top: 2em !important;
+    }
+    #list-body{
+        width: 350px !important;
+    }
+    .tag-list{
+        font-size: .7em !important;
+    }
+    #banner-list{
+        margin-right: -10em !important;
+        width: 100px !important;
+    }
+    #pic-list{
+        margin-left: 3.7em !important;
+        height: 62px; width: 62px;
+    }
+    #name-list{
+        font-size: .8em;
+    margin-left: -.4em;
+    margin-top: 1.75em;
+    width: 100px !important;
+    }
+    #search-list{
+        margin-left: .5em;
+    }
+    #profession-list{
+        margin-left: .3em;
+        width: max-content;
+        font-size: .7em !important;
+    }
+    #search-list{
+        font-size: .7em !important;
+        transform: scale(.65);
+    }
+    #request-match-b-list{
+        margin-right: 2em;
+        font-size: .7em;
+    }
+    #location-list{
+        font-size: .7em;
+    }
+}
+@media screen and (max-width:395px){
+    #list-body{
+        width: 330px !important;
+    }
+
+    #name-list{
+        font-size: .8em;
+    margin-left: 1em;
+    margin-top: 1.75em;
+    }
+
+    #profession-list{
+        margin-left: -.3em;
+        width: max-content;
+        font-size: .7em !important;
+    }
+    #search-list{
+        font-size: .7em !important;
+        transform: scale(.65);
+    }
+    #request-match-b-list{
+        margin-right: -.5em;
+        font-size: .7em;
+        margin-top: 5em;
+    }
+    .profclass.inactive{
+        margin-left: 1em !important;
+        margin-top: 2em !important;
+    }
+}
+@media screen and (max-width:375px){
+    #list-body{
+        width: 300px !important;
+    }
+    #location-list{
+        font-size: .65em;
+    }
+    #name-list{
+    margin-left: 1.5em;
+}
+    #profession-list{
+        margin-left: 0em;
+        width: max-content;
+        margin-top: 2.6em !important;
+        font-size: .6em !important;
+    }
+    #search-list{
+        font-size: .6em !important;
+        transform: scale(.6);
+        margin-top: -.9em;
+    }
+    #request-match-b-list{
+        margin-right: -.5em;
+        font-size: .6em;
+        margin-top: 8em !important;
+    }
+
+}
+@media screen and (max-width:350px){
+    #list-body{
+        width: 280px !important;
+    }
+    #banner-list{
+        width: 80px !important;
+    }
+    #pic-list{
+        width: 60px !important;
+        height: 60px !important;
+        margin-left: 2.5em !important;
+    }
+    #name-list{
+        font-size: .8em;
+
+}
+    #profession-list{
+        margin-left: 1em;
+        width: max-content;
+        font-size: .6em !important;
+    }
+    #search-list{
+        font-size: .6em !important;
+        transform: scale(.6);
+        margin-top: 0em;
+    }
+    #request-match-b-list{
+        margin-right: 0em;
+        font-size: .6em;
+    }
+    .tag-list{
+        margin-left: 9.5em !important;
+    }
+}
+.nftitleb{
+    text-align: left;
+}
