@@ -1,0 +1,2 @@
+mysqldump -u evercode -p inwork > ./name.sql
+this will backup your mysql database. remember to create evercode user with the respective password.
