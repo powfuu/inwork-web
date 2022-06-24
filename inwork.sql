@@ -18,7 +18,7 @@
 --
 -- Table structure for table `ba_search_trends`
 --
-USE inwork;
+USE inworkapp;
 DROP TABLE IF EXISTS `ba_search_trends`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;

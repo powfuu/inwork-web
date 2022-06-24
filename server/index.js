@@ -40,8 +40,8 @@ var storage = multer.diskStorage({
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.listen("3001", () => {
-    console.log("started server at port 3001$");
+app.listen("3002", () => {
+    console.log("started server at port 3002$");
 });
 
 app.post("/api/signup-personal", async(req, res) => {
@@ -187,8 +187,8 @@ app.post('/api/send-verification-code', async(req,res)=>{
 app.post('/api/check-verification-code', (req,res)=>{
     let code = req.body.verCode;
     let email = req.body.verificationE;
-    $query_check = 'SELECT * FROM change_password_requests WHERE verification_code=?'
-    db.query($query_check, [code], (err,result)=>{
+    $query_check = 'SELECT * FROM change_password_requests WHERE verification_code=? AND email=?'
+    db.query($query_check, [code,email], (err,result)=>{
         if(result.length === 0){
             res.send({codeMatchInverse:'Invalid verification code!'})
         }else if(result.length >= 1){
@@ -611,6 +611,7 @@ app.post('/api/remove-tag', (req,res)=>{
         $query,
         [email,id]
     )
+    res.send({rmved:'Object removed[]...'})
 })
 app.post('/api/update-tags', (req,res)=>{
     let email = req.body.email;
