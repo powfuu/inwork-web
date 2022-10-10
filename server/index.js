@@ -1398,3 +1398,6 @@ app.post('/api/get-notf-chat', (req,res)=>{
 
     })
 })
+app.post('/test', ()=>{
+    console.log('tested')
+})
