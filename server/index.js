@@ -44,9 +44,6 @@ app.listen("3002", () => {
     console.log("started server at port 3002$");
 });
 
-app.post('/api/server_test', ()=>{
-    res.send("Server Is Running on AWS with public address!")
-})
 app.post("/api/signup-personal", async(req, res) => {
     let name = req.body.name;
     let lastname = req.body.lastname;
