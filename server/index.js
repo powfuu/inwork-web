@@ -22,10 +22,10 @@ let transporter = nodemailer.createTransport({
     }
 })
 const db = mysql.createPool({
-    host: "localhost",
+    host: "evercode-db.cpsrirrhnxwz.eu-central-1.rds.amazonaws.com",
     user: "evercode",
-    password: "7780558",
-    database: "inwork",
+    password: "77805588",
+    database: "inworkapp",
 });
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -44,6 +44,9 @@ app.listen("3002", () => {
     console.log("started server at port 3002$");
 });
 
+app.post('/api/server_test', ()=>{
+    res.send("Server Is Running on AWS with public address!")
+})
 app.post("/api/signup-personal", async(req, res) => {
     let name = req.body.name;
     let lastname = req.body.lastname;
